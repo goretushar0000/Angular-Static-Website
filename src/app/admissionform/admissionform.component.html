@@ -1,0 +1,48 @@
+<div class="container">
+<div style="border: darkviolet; border-width: thick; border-style: groove; background-color: lightcyan;">
+<h1 style="color: darkolivegreen; text-align: center">Admission form</h1>
+<form #userForm="ngForm" (ngSubmit)="help(userForm.value)">
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="email" class="form-control" placeholder="Enter email" name="email" #email="ngModel" ngModel>
+      <small id="emailHelp" class="form-text text-muted" style="color: red;">We'll never share your details with anyone else.</small>
+      <div><span *ngIf="email.invalid && email.touched" class = "error">email field cannot be empty</span></div>
+    </div><br>
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" placeholder="Enter first Name" name="first name" ngModel>
+    </div><br>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" placeholder="Enter Last Name" name="last name" ngModel>
+    </div><br>
+    <div class="form-group">
+        <label>enter full address</label>
+        <input type="text" class="form-control" placeholder="Enter full address" name="address" ngModel>
+    </div><br>
+    <div class="form-group">
+    <div class="form-control"><b>Select your gender</b>
+        <label class="radio-inline"><input type="radio" name="gender" class="form-control" >Male</label>
+        <label class="radio-inline"><input type="radio" name="gender" class="form-control" >Female</label>
+</div><br>
+</div>
+    <div class="form-group col-md-4">
+        <label>Enter Qualification</label>
+        <select>
+          <option value="BE">BE</option>
+          <option value="Diploma">Diploma</option>
+          <option value="HSC">HSC</option>
+        </select>
+    </div><br>
+    <div class="form-group">
+        <label>attach current education marksheet</label>
+        <input type="file" class="form-control-file" name="file" ngModel>
+    </div><br>
+    <button style="color: darkviolet; text-align: center;" type ="submit">submit</button>
+    <div style="color: red;"><input type="reset" value="Reset"></div>
+</form>
+</div>
+</div>
+
+
+

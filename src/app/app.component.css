@@ -1,0 +1,13 @@
+.btn {
+    background-color: lightgreen; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 20px; /* Set a font size */
+  }
+.image {
+    background-image: url(https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29sbGVnZXxlbnwwfHwwfHw%3D&w=1000&q=80);
+}
+.image1{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1S_IEezBr0DhqaPJy3f0vPjAhFcjSxCXsS1FJYRlZMAI0R3lkNC2JiKo5dn4iK2ywJmU&usqp=CAU);
+}

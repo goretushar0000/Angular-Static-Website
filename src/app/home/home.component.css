@@ -1,0 +1,16 @@
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .bg {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCHhMolnI7Fq1AOcvL2QVW8wVHA5xmiv0S6t6O8tCmdC8DLzBWDmHaorGOjITp2BiDfMw&usqp=CAU");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
